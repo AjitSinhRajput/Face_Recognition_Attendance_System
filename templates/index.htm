@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F.R.A.S.</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+    
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <!-- header design -->
+    <header class="header">
+
+        <a href="#" class="logo"><i class='bx bxs-user-badge'></i> F.R.A.S.</a>
+
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+
+    <!-- home-section-design -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Touchless Face Recognition</h3>
+            <h1>Attendance System</h1>
+            <h3>And It is <span class="multiple-text"></span></h3>
+            <p>A face recognition attendance system is a type of biometric technology that uses artificial intelligence
+                to automatically identify and verify individuals based on their facial characteristics. These systems
+                are commonly used to track attendance in workplaces, stores, and other organizations. The system
+                captures an image of the individual's face and then compares it to a database of pre-registered faces.
+                If a match is found, the system records the individual's attendance. These systems can be integrated
+                with existing time and attendance software and can also be used for security and access control
+                purposes.</p>
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/ajit-sinh-rajput-7961b5233?original_referer="><i
+                        class='bx bxl-linkedin'></i></a>
+                <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+                <a href="mailto:asrrajput123ajit@gmail.com"><i class='bx bxl-gmail'></i></a>
+                <a href="https://github.com/AjitSinhRajput"><i class='bx bxl-github'></i></a>
+            </div>
+            <a href=move_forward class="btn">Take Demo</a>
+        </div>
+
+        <div class="home-img">
+            <video class="elementor-video"
+                src="https://storage.googleapis.com/ytpl_backup_060223_0113/truein/resources/videos/truein-face-attendance-demo.webm"
+                autoplay="" loop="" muted="muted" playsinline="" controlslist="nodownload"></video>
+        </div>
+
+    </section>
+
+    <!-- about section -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="{{url_for('static',filename='about1.png')}}">
+
+        </div>
+        <img src="{{url_for('static',filename='about3.png')}}">
+        <div class="about-content">
+            <h2 class="heading">About <span>F.R.A.S.</span></h2>
+            <h3>System</h3>
+            <p>You won’t need any complicated hardware as FRAS eliminates the need for a standalone face attendance
+                machine.Configure FRAS's app on any Android or iOS based device, and you are good to go.
+                Set late marks, half-day, overtime, shift timings, and other policies right within Truein's staff
+                management tracker and keep a close watch with real-time reports. Export detailed spreadsheets for
+                compensation and other calculations.
+            </p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+    </section>
+
+    <!-- service section design -->
+    <section class="services" id="services">
+        <h2 class="heading">Our <span>Services</span></h2>
+
+        <div class="service-container">
+            <div class="services-box">
+                <i class='bx bxs-devices'></i>
+                <h3>Anywhere and Instant</h3>
+                <p>Runs on Mobile/tablet/computer devices.Attendance at approved locations. Comes with Geofencing.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+
+            <div class="services-box">
+                <i class='bx bx-sitemap'></i>
+                <h3>Multi-Sites & Centralized</h3>
+                <p>Real-time view of multiple sites. Get transparency and controls.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+
+            <div class="services-box">
+                <i class='bx bxs-file-doc'></i>
+                <h3>Customizable Policies</h3>
+                <p>Policies as per Location or Staff category. Shift, Overtime, late marks, and more.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+
+            <div class="services-box">
+                <i class='bx bxs-user-badge'></i>
+                <h3>Payroll-ready Reports</h3>
+                <p>Automated timesheets with final calculations for payroll processing.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+
+            <div class="services-box">
+                <i class='bx bx-devices'></i>
+                <h3>Real-time view</h3>
+                <p>Realtime attendance dashboard on mobile and desktop</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+
+            <div class="services-box">
+                <i class='bx bx-cog'></i>
+                <h3>Maintenance</h3>
+                <p>Little or no maintenance, auto upgrade without any intervention</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact section -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Us</span></h2>
+
+        <form action="#">
+            <div class="inputbox">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email Address">
+            </div>
+            <div class="inputbox">
+                <input type="number" placeholder="Mobile Number">
+                <input type="text" placeholder="Email Subject">
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+    </section>
+
+    <!-- footer design -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2023 by Ajit Sinh Rajput | All Rights Reserved.</p>
+
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- typed js -->
+    <!-- <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script> -->
+    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+    <!-- custom script -->
+    <script src="{{url_for('static',filename='script.js')}}"></script>
+</body>
+
+</html>
